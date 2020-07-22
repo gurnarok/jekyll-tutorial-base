@@ -1,0 +1,14 @@
+tut_pages:
+    - title: Basic info
+      children:
+        - title: Front page
+          url: /
+        - title: About
+          url: /about.html
+
+    - title: First tutorial chapter
+      children:
+        - title: Chapter 1
+          url: /first/chapter1
+        - title: Chapter 2
+          url: /first/chapter2
