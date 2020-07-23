@@ -3,11 +3,13 @@ header:
     url: /
   - title: Tietoa
     url: /tietoa.html
+  - title: Github
+    url: https://github.com/gurnarok/jekyll-tutorial-base
 
 tutoriaali:
-    - title: Ensinmäinen osio
-      children:
-        - title: Kappale 1
-          url: /osio_1/kappale_1
-        - title: Kappale 2
-          url: /osio_1/kappale_2
+  - title: Ensinmäinen osio
+    children:
+      - title: Kappale 1
+        url: /osio_1/kappale_1.html
+      - title: Kappale 2
+        url: /osio_1/kappale_2.html

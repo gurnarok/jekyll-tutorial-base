@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kappale 1
-permalink: /osio_1/kappale_1
+permalink: /osio_1/kappale_1.html
 aside:
     toc: true
 sidebar:
@@ -44,7 +44,7 @@ Feri Auram unda evaserat natum [Thebae idque macies](#murra-mens-das) damnare
 vetitos ille perfide cum videor undas, facinus [per](#an-nullus). Cana ille
 moenia.
 
-```
+```c
 var broadband = saasThermistorMail;
 var wireless = bluetoothBare;
 isp_dot_snow.fatXp *= text(1, active_seo(18) * fifo_waveform,

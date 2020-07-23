@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kappale 2
-permalink: /osio_1/kappale_2
+permalink: /osio_1/kappale_2.html
 aside:
     toc: true
 sidebar:
