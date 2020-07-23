@@ -1,11 +1,11 @@
 ---
 layout: article
-title: Chapter 1
-permalink: /first/chapter1
+title: Kappale 1
+permalink: /osio_1/kappale_1
 aside:
     toc: true
 sidebar:
-  nav: tut_pages
+  nav: tutoriaali
 ---
 
 ## Nunc specie addit Hyperborea

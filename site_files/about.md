@@ -5,7 +5,7 @@ permalink: /about.html
 aside:
     toc: true
 sidebar:
-    nav: tut_pages
+    nav: tutoriaali
 ---
 
 ## Regique sinunt

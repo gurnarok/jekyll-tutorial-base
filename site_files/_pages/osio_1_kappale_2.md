@@ -1,11 +1,11 @@
 ---
 layout: article
-title: Chapter 2
-permalink: /first/chapter2
+title: Kappale 2
+permalink: /osio_1/kappale_2
 aside:
     toc: true
 sidebar:
-  nav: tut_pages
+  nav: tutoriaali
 ---
 
 ## Manu nescio pugnandi contemptor

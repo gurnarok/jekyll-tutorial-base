@@ -4,7 +4,7 @@ title: Front page
 aside:
     toc: false
 sidebar:
-    nav: tut_pages
+    nav: tutoriaali
 ---
 
 ## Gravidis operis cacumina
