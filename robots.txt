@@ -1,1 +1,1 @@
-Sitemap: https://gurnarok.github.io/jekyll-tutorial-base//sitemap.xml
+Sitemap: https://gurnarok.github.io/jekyll-tutorial-base//jekyll-tutorial-base/sitemap.xml
