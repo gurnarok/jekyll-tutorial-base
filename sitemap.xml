@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://gurnarok.github.io/jekyll-tutorial-base//sivut/etusivu.html</loc>
+</url>
+<url>
+<loc>https://gurnarok.github.io/jekyll-tutorial-base//</loc>
+</url>
+<url>
+<loc>https://gurnarok.github.io/jekyll-tutorial-base//sivut/navi.html</loc>
+</url>
+<url>
+<loc>https://gurnarok.github.io/jekyll-tutorial-base//sivut/sivujen_tekeminen.html</loc>
+</url>
+<url>
+<loc>https://gurnarok.github.io/jekyll-tutorial-base//sivut/sivujen_vienti.html</loc>
+</url>
+</urlset>

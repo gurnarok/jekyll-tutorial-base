@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="fi">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Tutoriaali pohja - Tutoriaali pohja</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Navigoinin valmistus - Tutoriaali pohja</title>
 
 <meta name="description" content="">
-<link rel="canonical" href="https://gurnarok.github.io/jekyll-tutorial-base//"><link rel="alternate" type="application/rss+xml" title="Tutoriaali pohja" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://gurnarok.github.io/jekyll-tutorial-base//sivut/etusivu.html"><link rel="alternate" type="application/rss+xml" title="Tutoriaali pohja" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -265,7 +265,7 @@
 
     <div class="grid page__grid">
 
-      <div class="page__sidebar d-print-none"><div class="sidebar-toc"><ul class="toc toc--navigator"><li class="toc-h1">Sivujen tekeminen</li><li class="toc-h2"><a href="/sivut/etusivu.html">Etusivun tekeminen</a></li><li class="toc-h2"><a href="/sivut/navi.html">Navigoinin valmistus</a></li><li class="toc-h2"><a href="/sivut/sivujen_tekeminen.html">Sivujen tekeminen</a></li><li class="toc-h2"><a href="/sivut/sivujen_vienti.html">Sivujen parseeminen ja vienti palvelimelle</a></li></ul></div></div><div class="page__main js-page-main has-aside cell cell--auto">
+      <div class="page__sidebar d-print-none"><div class="sidebar-toc"><ul class="toc toc--navigator"><li class="toc-h1">Sivujen tekeminen</li><li class="toc-h2 active"><a href="/sivut/etusivu.html">Etusivun tekeminen</a></li><li class="toc-h2"><a href="/sivut/navi.html">Navigoinin valmistus</a></li><li class="toc-h2"><a href="/sivut/sivujen_tekeminen.html">Sivujen tekeminen</a></li><li class="toc-h2"><a href="/sivut/sivujen_vienti.html">Sivujen parseeminen ja vienti palvelimelle</a></li></ul></div></div><div class="page__main js-page-main has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -278,7 +278,7 @@
 	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
 </svg>
 <a title="" href="/">Tutoriaali pohja</a></div></div><nav class="navigation">
-        <ul><li class="navigation__item navigation__item--active"><a href="/">Etusivu</a></li><li class="navigation__item"><a href="https://github.com/gurnarok/jekyll-tutorial-base">Github</a></li></ul>
+        <ul><li class="navigation__item"><a href="/">Etusivu</a></li><li class="navigation__item"><a href="https://github.com/gurnarok/jekyll-tutorial-base">Github</a></li></ul>
       </nav></div>
   </header>
 </div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
@@ -289,77 +289,60 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Tutoriaali pohja</h1></header></div><meta itemprop="headline" content="Tutoriaali pohja"><meta itemprop="author" content="Hannu Henttinen"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Navigoinin valmistus</h1></header></div><meta itemprop="headline" content="Navigoinin valmistus"><meta itemprop="author" content="Hannu Henttinen"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><h2 id="alusta">Alusta</h2>
+<div class="article__content" itemprop="articleBody"><p>Muokkaamalla <code class="language-plaintext highlighter-rouge">index.md</code> tiedostoa, voimme luoda etusivun sellaiseksi kuin haluamme.</p>
 
-<p>Käyttöjärjestelmä, johon tämä tehdään, on Ubuntu 20.04.</p>
+<p>Huomioimalla alussa olevat asetukset, voimme muuttaa muutaman asetuksen.</p>
 
-<h2 id="ohjelmat">Ohjelmat</h2>
-
-<p>Asennetaan tarvittavat ohjelmat</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyllrb@jekyll-vm:~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nt">-y</span> <span class="nb">install </span>make build-essential ruby ruby-dev zlib1g-dev
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">article</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Etusivu</span>
+<span class="na">aside</span><span class="pi">:</span>
+    <span class="na">toc</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">sidebar</span><span class="pi">:</span>
+    <span class="na">nav</span><span class="pi">:</span> <span class="s">tut_pages</span>
+<span class="nn">---</span>
 </code></pre></div></div>
 
-<p>Muokataan <code class="language-plaintext highlighter-rouge">.bashrc</code> tiedostoa ja lisätään tämä sen loppuun.</p>
+<p>Käydään asetukset läpi.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GEM_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/gems
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/gems/bin:<span class="nv">$PATH</span>
-</code></pre></div></div>
+<table>
+  <thead>
+    <tr>
+      <th>Asetus</th>
+      <th>Selitys</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>layout</td>
+      <td>Sivun tyyppi, article optiota käytetään eniten. Muut mahdolliset optiot ovat 404, article, articles, archive, landing. Näistä löytyy <a href="https://tianqi.name/jekyll-TeXt-theme/samples.html">esimerkkejä täältä</a>.</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>Sivun otsikko</td>
+    </tr>
+    <tr>
+      <td>aside: toc: true</td>
+      <td>Lisää oikealle reunalle sivun sisällysluettelon, jonka se generoi automaattisesti riippuen HTML otsikko tiedoista</td>
+    </tr>
+    <tr>
+      <td>sidebar</td>
+      <td>Tässä määritetään sivulle tulevan navigointi. <code class="language-plaintext highlighter-rouge">nav</code> arvoksi annetaan muuttujan nimi, joka sisältää listan sivuista.</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Aktivoidaan exportit komennolla <code class="language-plaintext highlighter-rouge">jekyllrb@jekyll-vm:~$ source ~/.bashrc</code></p>
+<p>Markdown kieli on itsessään erittäin yksinkertainen ymmärtää. Hyvinä linkkeinä tämän opetteluun löytyy <a href="https://kramdown.gettalong.org/quickref.html">kramdown</a> ja <a href="https://www.markdownguide.org/">Markdown Guide</a> sivuilta.</p>
 
-<h2 id="jekyll-asennus-ja-konfiguraatio">Jekyll asennus ja konfiguraatio</h2>
-
-<p>Asennetaan jekyll ja luodaan sivuja varten kansio</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyllrb@jekyll-vm:~<span class="nv">$ </span>gem <span class="nb">install </span>bundler jekyll
-jekyllrb@jekyll-vm:~<span class="nv">$ </span><span class="nb">mkdir </span>Documents/jekyll_sivut
-jekyllrb@jekyll-vm:~<span class="nv">$ </span><span class="nb">cd </span>Documents/jekyll_sivut
-</code></pre></div></div>
-
-<p>Luodaan uusi kansio nimeltä <code class="language-plaintext highlighter-rouge">testi</code> ja kopioidaan githubista kansio</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyllrb@jekyll-vm:~/Documents/jekyll_sivut<span class="nv">$ </span><span class="nb">mkdir </span>testi
-jekyllrb@jekyll-vm:~/Documents/jekyll_sivut<span class="nv">$ </span>git clone https://github.com/gurnarok/jekyll-tutorial-base.git
-Cloning into <span class="s1">'jekyll-tutorial-base'</span>...
-remote: Enumerating objects: 22, <span class="k">done</span><span class="nb">.</span>
-remote: Counting objects: 100% <span class="o">(</span>22/22<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-remote: Compressing objects: 100% <span class="o">(</span>18/18<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-remote: Total 22 <span class="o">(</span>delta 1<span class="o">)</span>, reused 19 <span class="o">(</span>delta 1<span class="o">)</span>, pack-reused 0
-Unpacking objects: 100% <span class="o">(</span>22/22<span class="o">)</span>, 11.50 KiB | 981.00 KiB/s, <span class="k">done</span><span class="nb">.</span>
-jekyllrb@jekyll-vm:~/Documents/jekyll_sivut<span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> jekyll-tutorial-base/site_files/<span class="k">*</span> testi/
-</code></pre></div></div>
-
-<p>Asennetaan tarvittavat <code class="language-plaintext highlighter-rouge">bundle</code> paketit.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyllrb@jekyll-vm:~/Documents/jekyll_sivut<span class="nv">$ </span><span class="nb">cd </span>testi/
-jekyllrb@jekyll-vm:~/Documents/jekyll_sivut/testi<span class="nv">$ </span>bundle <span class="nb">install</span>
-</code></pre></div></div>
-
-<p>Tässä vaiheessa voimme testata sivujen toimivuutta</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyllrb@jekyll-vm:~/Documents/jekyll_sivut/testi<span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
-Configuration file: /home/jekyllrb/Documents/jekyll_sivut/testi/_config.yml
-            Source: /home/jekyllrb/Documents/jekyll_sivut/testi
-       Destination: /home/jekyllrb/Documents/jekyll_sivut/testi/_site
- Incremental build: disabled. Enable with <span class="nt">--incremental</span>
-      Generating...
-       Jekyll Feed: Generating feed <span class="k">for </span>posts
-                    <span class="k">done in </span>0.317 seconds.
- Auto-regeneration: enabled <span class="k">for</span> <span class="s1">'/home/jekyllrb/Documents/jekyll_sivut/testi'</span>
-    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
-</code></pre></div></div>
-
-<p>Avaamalla selaimen ja menemällä osoitteeseen 127.0.0.1:4000 sinun pitäisi nähdä sivusi.</p>
+<p>Kramdown on sinällänsä tärkeä, koska jekyllrb käyttää sitä moottorina taustalla ja se lisää muutaman ylimääräisen option merkkaamiseen, jota normaalista markdownista ei välttämättä löydy.</p>
 </div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>EDELLINEN</span><a href="/sivut/sivujen_vienti.html">Sivujen parseeminen ja vienti palvelimelle</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="next"><span>SEURAAVA</span><a href="/sivut/navi.html">Navigoinin valmistus</a></div></div></div>
 
 </div>
 
