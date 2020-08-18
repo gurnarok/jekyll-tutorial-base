@@ -345,7 +345,21 @@ Configuration file: /home/jekyllrb/Documents/jekyll_sivut/testi/_config.yml
 
 <hr />
 
-<p>Toivottavasti tämä dokumentaatio auttaa teitä tekemään sivuja projekteja varten.</p>
+<h2 id="palvelimelle-siirtäminen">Palvelimelle siirtäminen</h2>
+
+<p>Siirrä <code class="language-plaintext highlighter-rouge">_site</code> kansion sisältö palvelimesi verkkokansioon. Tämä vaihtelee, riippuen palvelimen asetuksista.</p>
+
+<h2 id="github-sivut">Github sivut</h2>
+
+<p>Kaikkein yksinkertaisin optio on siirtää githubin sivuihin, mutta tämä vaatii omaa työtä.</p>
+
+<p>Meidän pitää luoda ensin githubiin uusi branch, jonka nimeksi tulee <code class="language-plaintext highlighter-rouge">gh-pages</code> ja sinne siiretään <code class="language-plaintext highlighter-rouge">_site</code> kansion sisältö.</p>
+
+<p>Parhaiten tämä toimii, kun luot uuden kansion komennolla <code class="language-plaintext highlighter-rouge">git clone -b gh-pages https://github.com/esimerkki/testi_projekti.git testi_projekti_gh-pages/</code></p>
+
+<p>Kun sivu on kopioitu, luo uusi commit ja puske tiedot palvelimelle <code class="language-plaintext highlighter-rouge">git commit -am "Sivujen luonti" &amp;&amp; git push</code></p>
+
+<p>Tämän jälkeen sivujen pitäisi toimia, osoitteena on <code class="language-plaintext highlighter-rouge">https://esimerkki.github.io/testi_projekti</code></p>
 </div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
